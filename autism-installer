@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ "$EUID" -ne 0 ]; then 
+  echo "Please run this script using root account or sudo/doas"
+  exit 1
+fi
+rm /bin/autismvpn &> /dev/null
+rm -rf /opt/autismvpn &> /dev/null
+mkdir -p /opt/autismvpn/
+cp ./autismvpn /opt/autismvpn/
+cp ./v2ray2json.py /opt/autismvpn/
+ln -s /opt/autismvpn/autismvpn /bin/autismvpn
