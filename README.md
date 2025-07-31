@@ -11,7 +11,7 @@ v2ray
 bash (of course) 
 
 
-Simple VPN client for boys with autism \
+Simple VPN client for boys and girls with autism \
 For installing please execute autism-installer \
 For help in using please execute autismvpn help 
 \
